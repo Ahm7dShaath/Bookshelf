@@ -1,0 +1,110 @@
+body {
+    background-color: #CD853F;
+}
+
+.header {
+    font-family: 'Pacifico', cursive;
+    font-size: 34px;
+
+}
+
+.book {
+    
+    margin-top: inherit;
+    padding: 25px 30px 0 30px;
+    width: 100%;
+    height: auto;
+    max-height: auto;
+}
+
+.parent {
+    position: relative;
+}
+
+.bookreviewed {
+
+    position: absolute;
+    z-index: 10;
+    top: 20px;
+    right: 100px;
+    height: 7%;
+    width: 50%;
+    font-size: 2vmin;
+    background: #F7991C;
+    text-align: center;
+    vertical-align: middle;
+    color: #302F47;
+    font-weight: bold;
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+}
+
+.shelf {
+    position: relative;
+    max-height: 200px;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-width: 50px 20px 20px 35px;
+    border-bottom: 50px solid rgba(172, 91, 13, 0.95);
+    border-left: 20px ;
+    border-right: 20px ;
+    top: -57px;
+    z-index: -100;
+    background-color: rgba(170, 91, 13, 0.85);
+    border-left-width: 150%;
+}
+
+* {
+   box-sizing: border-box;
+}
+h1 {
+   text-align: center;
+}
+.outer-grid {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0 4px;
+    
+    
+    }
+.inner-grid {
+   flex: 30%;
+   max-width: 15%;
+   padding: 0 4px;
+   margin-left: 100px;
+
+}
+.inner-grid img {
+   margin-top: 8px;
+   width: 100%;
+   padding: 10px;
+   border-color: black;
+
+}
+@media screen and (max-width: 800px) {
+   .inner-grid {
+      flex: 50%;
+      max-width: 50%;
+   }
+}
+@media screen and (max-width: 600px) {
+   .inner-grid {
+      flex: 100%;
+      max-width: 100%;
+   }
+   button {
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background-color: crimson;
+}
+#form {
+    display: none;
+    background-color: darkgoldenrod;
+    height: 160px;
+    width: 250px;
+    margin: auto;
+} 
+    
